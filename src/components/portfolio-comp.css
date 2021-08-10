@@ -1,0 +1,17 @@
+.portfolio-comp {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4vw;
+	margin: 8vw;
+}
+.portfolio-comp a {
+	background: var(--transblack);
+	padding: 3vw;
+	border: 1vw solid var(--transblack);
+	color: var(--lightest);
+	text-align: center;
+	text-decoration: none;
+}
+.portfolio-comp a:hover {
+	background: transparent;
+}

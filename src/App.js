@@ -5,29 +5,32 @@ import {
 	Route
 } from 'react-router-dom';
 
-import './App.css';
-import HeaderComp from './components/Header-Comp';
+import HeaderComp from './components/HeaderComp';
+import PortfolioComp from './components/PortfolioComp';
+import EducationComp from './components/EducationComp';
+import ExperienceComp from './components/ExperienceComp';
+import FooterComp from './components/FooterComp';
 
 function App() {
   return (
 		<Router>
-			<div className="App">
+			<div className="app">
 				<HeaderComp />
 				<Switch>
 					<Route path='/portfolio'>
-						Portfolio!!!
+						<PortfolioComp />
+						<FooterComp />
 					</Route>
 					<Route path='/education'>
-						Education!!!
+						<EducationComp />
+						<FooterComp />
 					</Route>
 					<Route path='/experience'>
-						Experience!!!
+						<ExperienceComp />
+						<FooterComp />
 					</Route>
 				</Switch>
-
 			</div>
-
-
 		</Router>
   );
 }

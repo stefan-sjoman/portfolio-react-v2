@@ -1,0 +1,28 @@
+h1 {
+	font-family: 'header-font';
+	font-weight: 100;
+	text-align: center;
+	margin: 0px;
+	font-size: 72px;
+}
+header ul {
+	margin-top: 4vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+header a {
+	padding: 16px;
+	color: var(--ligthest);
+	letter-spacing: 4px;
+	text-decoration: none;
+}
+header a:hover {
+	text-shadow: 0px 0px 10px var(--lightest);
+}
+header .selected {
+	font-weight: 900;
+	text-shadow: 0px 0px 10px var(--lightest);
+}

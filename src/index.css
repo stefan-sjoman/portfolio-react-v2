@@ -1,11 +1,36 @@
 :root {
 	--lightest: rgb(235, 235, 235);
+	--middle: rgb(128, 128, 128);
 	--darkest: rgb(20, 20, 20);
+	--transblack: rgba(0, 0, 0, 0.5);
+}
+@font-face {
+	font-family: 'header-font';
+	src: url('./assets/fonts/Allura/Allura-Regular.ttf');
+}
+@font-face {
+	font-family: 'main-font';
+	src: url('./assets/fonts/Play/Play-Regular.ttf');
 }
 html {
-	background-color: var(--darkest);
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)
+	), url('./assets/images/ocean.jpg');
+	background-size: cover;
 	color: var(--lightest);
+	font-family: 'main-font';
 }
 body {
   margin: 0;
+}
+.app {
+	min-height: 100vh;
+}
+.info-table {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background: var(--transblack);
+	padding: 3vw;
+	border: 1vw solid var(--transblack);
+	margin: 8vw;
+	gap: 4vw;
 }
