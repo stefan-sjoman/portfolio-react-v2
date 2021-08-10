@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const HeaderComp = () => {
 	return (
@@ -5,9 +6,15 @@ const HeaderComp = () => {
 			<h1>Stefan Sjöman</h1>
 			<nav>
 				<ul>
-					<li>Portfolio</li>
-					<li>Education</li>
-					<li>Experience</li>
+					<li>
+						<Link to='/portfolio'>Portfolio</Link>
+					</li>
+					<li>
+						<Link to='/education'>Education</Link>
+					</li>
+					<li>
+						<Link to='/experience'>Experience</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
