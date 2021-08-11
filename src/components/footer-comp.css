@@ -2,7 +2,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 6vw;
+	margin: 3vw;
 	gap: 3vw;
 }
 footer .linked-in {

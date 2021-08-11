@@ -1,6 +1,16 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { showFooter } from '../redux/footer';
 import './portfolio-comp.css';
 
 const PortfolioComp = () => {
+
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(showFooter());
+	}, [dispatch])
+
 	return (
 		<div className="portfolio-comp">
 			<a href="portfolio/Unsplash/index.html" target="_blank">Unsplash Images</a>

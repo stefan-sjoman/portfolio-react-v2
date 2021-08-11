@@ -1,5 +1,14 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { showFooter } from "../redux/footer";
 
 const EducationComp = () => {
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(showFooter());
+	}, [dispatch])
+
 	return (
 		<section className="education-comp">
 			<section className="info-table">

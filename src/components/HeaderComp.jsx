@@ -1,12 +1,14 @@
-import { NavLink } from 'react-router-dom';
-
+import { useDispatch } from 'react-redux';
+import { Link, NavLink } from 'react-router-dom';
+import { hideFooter } from '../redux/footer';
 import './header-comp.css';
 
 const HeaderComp = () => {
+	const dispatch = useDispatch();
 
 	return (
 		<header>
-			<NavLink to='/'><h1>Stefan Sjöman</h1></NavLink>
+			<Link to='/'><h1 onClick={() => dispatch(hideFooter())}>Stefan Sjöman</h1></Link>
 			<nav>
 				<ul>
 					<li>

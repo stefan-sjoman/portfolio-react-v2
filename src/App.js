@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -12,6 +13,8 @@ import ExperienceComp from './components/ExperienceComp';
 import FooterComp from './components/FooterComp';
 
 function App() {
+	const displayFooter = useSelector(state => state.footer.isFooterVisible)
+
   return (
 		<Router>
 			<div className="app">
@@ -19,17 +22,15 @@ function App() {
 				<Switch>
 					<Route path='/portfolio'>
 						<PortfolioComp />
-						<FooterComp />
 					</Route>
 					<Route path='/education'>
 						<EducationComp />
-						<FooterComp />
 					</Route>
 					<Route path='/experience'>
 						<ExperienceComp />
-						<FooterComp />
 					</Route>
 				</Switch>
+				{ displayFooter? <FooterComp /> : null }
 			</div>
 		</Router>
   );

@@ -1,5 +1,14 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { showFooter } from "../redux/footer";
 
 const ExperienceComp = () => {
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(showFooter());
+	}, [dispatch])
+
 	return (
 		<section className="experience-comp">
 			<section className="info-table">
