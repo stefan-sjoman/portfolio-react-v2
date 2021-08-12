@@ -1,6 +1,7 @@
 :root {
 	--lightest: rgb(235, 235, 235);
 	--middle: rgb(128, 128, 128);
+	--darker: rgb(64, 64, 64);
 	--darkest: rgb(20, 20, 20);
 	--transblack: rgba(0, 0, 0, 0.5);
 }
@@ -22,6 +23,7 @@ html {
 }
 body {
   margin: 0;
+	overflow-y: scroll;
 }
 .app {
 	min-height: 100vh;
@@ -40,6 +42,20 @@ body {
 	border: 1vw solid var(--transblack);
 	margin: 6vw;
 	gap: 3vw;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--darkest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--darker);
+  width: 50px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--middle);
 }
 @keyframes expand {
 	0% {max-height: 0vh;}
