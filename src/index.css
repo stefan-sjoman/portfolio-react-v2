@@ -3,19 +3,20 @@
 	--middle: rgb(128, 128, 128);
 	--darker: rgb(64, 64, 64);
 	--darkest: rgb(20, 20, 20);
-	--transblack: rgba(0, 0, 0, 0.5);
+	--transblack: rgba(0, 0, 0, 0.7);
 }
 @font-face {
 	font-family: 'header-font';
-	src: url('./assets/fonts/Allura/Allura-Regular.ttf');
+	src: url('./assets/fonts/Tangerine/Tangerine-Regular.ttf');
 }
 @font-face {
 	font-family: 'main-font';
 	src: url('./assets/fonts/Play/Play-Regular.ttf');
 }
 html {
+	min-width: 270px;
 	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)
-	), url('./assets/images/ocean.jpg');
+	), url('./assets/images/ocean-infinite.jpg');
 	background-size: 100% auto;
 	background-repeat: repeat-y;
 	color: var(--lightest);
@@ -42,6 +43,7 @@ body {
 	border: 1vw solid var(--transblack);
 	margin: 6vw;
 	gap: 3vw;
+	font-size: 14px;
 }
 ::-webkit-scrollbar {
   width: 4px;
@@ -60,4 +62,13 @@ body {
 @keyframes expand {
 	0% {max-height: 0vh;}
 	100% {max-height: 100vh;}
+}
+@media only screen and (max-width: 600px) {
+	.info-table {
+		grid-template-columns: auto;
+		grid-gap: 0vw;
+	}
+	.table-date {
+		margin-bottom: 16px;
+	}
 }

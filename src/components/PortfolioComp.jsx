@@ -13,6 +13,8 @@ const PortfolioComp = () => {
 
 	return (
 		<div className="portfolio-comp tone-in">
+			<a href="https://sjoman-grocery-list.herokuapp.com/" rel="noreferrer" target="_blank">Grocery List</a>
+			<a href="https://sjoman-hamsterwars-fullstack.herokuapp.com/" rel="noreferrer" target="_blank">Hamsterwars</a>
 			<a href="portfolio/Unsplash/index.html" target="_blank">Unsplash Images</a>
 			<a href="portfolio/StarWarsV4/index.html" target="_blank">Star Wars</a>
 			<a href="portfolio/BeerProject/index.html" target="_blank">Beer Project</a>

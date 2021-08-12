@@ -14,7 +14,8 @@ const ExperienceComp = () => {
 			<section className="info-table">
 				<div className="table-header">Svevia AB</div>
 				<div className="table-description">Yrkesarbetare Trafikanordningar, Tunneltvätt och Drift</div>
-				<div className="table-date">Apr 2015 - Pågående</div><div className="table-header">Mankan Entreprenad</div>
+				<div className="table-date">Apr 2015 - Pågående</div>
+				<div className="table-header">Mankan Entreprenad</div>
 				<div className="table-description">Kranbilschaufför. Arbetade för underentreprenör med allt inom vägarbete hos Svevia och Bäckström AB.</div>
 				<div className="table-date">Jun 2013 – Apr 2015</div>
 				<div className="table-header">TÅV AB</div>
