@@ -2,7 +2,7 @@ import './footer-comp.css';
 
 const FooterComp = () => {
 	return (
-		<footer>
+		<footer className="tone-in">
 			<a href="https://www.linkedin.com/in/stefan-sj%C3%B6man/" target="_blank" rel="noreferrer">
 				<div className="linked-in"></div>
 			</a>

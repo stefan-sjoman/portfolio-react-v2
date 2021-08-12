@@ -10,7 +10,7 @@ const ExperienceComp = () => {
 	}, [dispatch])
 
 	return (
-		<section className="experience-comp">
+		<section className="experience-comp tone-in">
 			<section className="info-table">
 				<div className="table-header">Svevia AB</div>
 				<div className="table-description">Yrkesarbetare Trafikanordningar, Tunneltvätt och Drift</div>

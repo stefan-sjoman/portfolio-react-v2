@@ -19,17 +19,19 @@ function App() {
 		<Router>
 			<div className="app">
 				<HeaderComp />
-				<Switch>
-					<Route path='/portfolio'>
-						<PortfolioComp />
-					</Route>
-					<Route path='/education'>
-						<EducationComp />
-					</Route>
-					<Route path='/experience'>
-						<ExperienceComp />
-					</Route>
-				</Switch>
+				<main>
+					<Switch>
+						<Route path='/portfolio'>
+							<PortfolioComp />
+						</Route>
+						<Route path='/education'>
+							<EducationComp />
+						</Route>
+						<Route path='/experience'>
+							<ExperienceComp />
+						</Route>
+					</Switch>
+				</main>
 				{ displayFooter? <FooterComp /> : null }
 			</div>
 		</Router>

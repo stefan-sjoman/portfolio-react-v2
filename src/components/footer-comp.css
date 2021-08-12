@@ -2,7 +2,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 3vw;
+	margin-bottom: 6vw;
 	gap: 3vw;
 }
 footer .linked-in {
@@ -13,7 +13,6 @@ footer .linked-in {
 footer .linked-in:hover {
 	box-shadow: 0px 0px 10px var(--lightest);
 }
-
 footer a {
 	font-size: 10px;
 	color: var(--lightest);

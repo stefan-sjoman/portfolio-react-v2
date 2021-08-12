@@ -1,3 +1,11 @@
+header {
+	margin-top: 0vh;
+	transition: all 2s;
+}
+.center-header {
+	margin-top: 30vh;
+	transition: all 2s;
+}
 h1 {
 	font-family: 'header-font';
 	font-weight: 100;
@@ -6,7 +14,7 @@ h1 {
 	font-size: 72px;
 }
 header ul {
-	margin-top: 4vw;
+	margin: 1vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 0px;

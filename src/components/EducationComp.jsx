@@ -10,7 +10,7 @@ const EducationComp = () => {
 	}, [dispatch])
 
 	return (
-		<section className="education-comp">
+		<section className="education-comp tone-in">
 			<section className="info-table">
 				<div className="table-header">It-Högskolan</div>
 				<div className="table-description">Front-End Development</div>

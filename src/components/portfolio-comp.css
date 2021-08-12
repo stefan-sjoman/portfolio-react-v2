@@ -1,8 +1,8 @@
 .portfolio-comp {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 4vw;
-	margin: 8vw;
+	gap: 3vw;
+	margin: 6vw;
 }
 .portfolio-comp a {
 	background: var(--transblack);
