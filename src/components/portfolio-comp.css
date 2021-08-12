@@ -2,12 +2,12 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 3vw;
-	margin: 6vw;
+	margin: 3vw 6vw;
 }
 .portfolio-comp a {
 	background: var(--transblack);
 	padding: 3vw;
-	border: 1vw solid var(--transblack);
+	border: 1vw solid black;
 	color: var(--lightest);
 	text-align: center;
 	text-decoration: none;
