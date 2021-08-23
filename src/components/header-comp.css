@@ -7,13 +7,20 @@ header {
 	margin-top: 30vh;
 	transition: all 2s;
 }
-h1 a {
+.h1-wrapper {
+	display: inline-block;
+}
+.h1-wrapper a {
+	display: inline-block;
+	text-decoration: none;
+}
+h1 {
+	display: inline;
+	font-size: 72px;
 	font-family: 'header-font';
 	font-weight: 100;
 	margin: 0px;
-	font-size: 72px;
-	color: var(--ligthest);
-	text-decoration: none;
+	color: var(--lightest);
 }
 header ul {
 	margin: 1vw;
@@ -28,7 +35,7 @@ header li {
 nav a {
 	font-size: 18px;
 	padding: 16px;
-	color: var(--ligthest);
+	color: var(--lightest);
 	letter-spacing: 4px;
 	text-decoration: none;
 }

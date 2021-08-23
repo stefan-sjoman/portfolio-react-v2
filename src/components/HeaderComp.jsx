@@ -19,9 +19,9 @@ const HeaderComp = () => {
 
 	return (
 		<header className={ headerCenter }>
-			<h1 onClick={ () => dispatch(hideFooter()) }>
-				<Link to='/'>Stefan Sjöman</Link>
-			</h1>
+			<div className="h1-wrapper" onClick={ () => dispatch(hideFooter()) } >		
+					<Link to='/'><h1>Stefan Sjöman</h1></Link>
+			</div>
 			<nav>
 				<ul>
 					<li>
